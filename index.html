@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="zxx">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Victor Ponomarciuc</title>
 </head>
-<body>
-    
+
+<body style="display: flex; justify-content: center;" >
+    <button id="body__color-set" style="width:200px; height: 50px;">Orange</button>
 </body>
-<script >
+<script>
     document.addEventListener("DOMContentLoaded", () => {
         document.body.style.backgroundColor = "red";
         setTimeout(() => {
-            document.body.style.backgroundColor = "green";    
+            document.body.style.backgroundColor = "green";
         }, 3000);
     })
-    </script>
+    document.getElementById("body__color-set").addEventListener("click", () => {
+        document.body.style.backgroundColor = "orange";
+    })
+</script>
+
 </html>
